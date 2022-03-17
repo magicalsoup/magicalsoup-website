@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Card from '../components/card';
 import HobbyData from '../data/hobbyData';
 import NavBar from '../components/navbar';
+import Link from 'next/link';
 export default function Home() {
   /*
             <div className="flex justify-center items-center flex-wrap p-16 bg-cyan-400">
@@ -10,7 +11,7 @@ export default function Home() {
                   <Card props={item}></Card>
                 )}
             </div>
-  */
+      */
   return (
     <>
       <Head>
@@ -20,21 +21,28 @@ export default function Home() {
       <main>
         <div className="absolute top-0 bg-blossom w-full h-screen bg-cover bg-fixed">
           <div className="flex w-full h-screen justify-center items-center">
-              <a href="#info" className="z-50 text-3xl text-#fff py-2 px-4 rounded-full bg-transparent 
-              transition-all duration-300 ease-in-out">Explore</a>
+            <div className="flex justify-center items-center border-8 border-#fff h-1/5 w-1/2 md:h-1/3 backdrop-blur-md">
+              <button className="explore-btn font-body text-xl sm:text3xl md:text-5xl lg:text-7xl">
+                <a className="explore-text" href="#info">PortFolio</a>
+              </button>
+            </div>                
           </div>
 
-          <div className="flex flex-col items-center space-y-4 relative h-full bg-#2b1055 p-20" id="info">
-
+          <div className="flex flex-col items-center space-y-24 relative h-full bg-#2b1055 p-20" id="info">
             <div className="flex flex-col">
-              <h2 className="text-5xl font-bold text-#fff py-4">Who I am</h2>
-              <p1 className="text-base text-white">
-                des gens de cultures differentes ont la chance de partager leurs cultures et traditions, donc les gens peuvent comprendre cultures differentes et  s'amuser en apprenant le grand monde. cela contribuera a faire de l'ecole un endroit plus inclusif.
-              </p1>
+              <div>
+                <h2 className="text-5xl font-bold text-#fff py-4 font-body">Hi, I'm James</h2>
+              </div>
+              <div className="grid grid-rows-1 grid-cols-3 pt-24">
+                {HobbyData.map((item) => 
+                  <Card props={item}></Card>
+                )}
+              </div>
             </div>
-
           </div>
-          <div className="relative bg-blossom w-full h-screen bg-cover bg-fixed"></div>
+          <div className="relative bg-blossom w-full h-screen bg-cover bg-fixed">
+            <div></div>
+          </div>
         </div>
       </main>
     </>

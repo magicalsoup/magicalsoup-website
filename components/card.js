@@ -21,7 +21,7 @@ export default function Card({props}) {
         if(showCard) {
             return "flex flex-col items-center relative max-w-sm h-96 bg-white mx-8 my-2.5 px-8 py-2.5 shadow-md transition-all ease-in-out duration-300";
         }
-        return "flex flex-col items-center relative max-w-sm h-52 bg-white mx-8 my-2.5 px-8 py-2.5 shadow-md transition-all ease-in-out duration-300";
+        return "flex flex-col items-center relative max-w-sm h-64 bg-white mx-8 my-2.5 px-8 py-2.5 shadow-md transition-all ease-in-out duration-300";
     }
 
     return (

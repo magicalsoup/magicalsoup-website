@@ -12,7 +12,7 @@ export default function Card({props}) {
     
     function getCardImageName() {
         if(showCard) {
-            return "flex relative w-64 h-64 -top-16 shadow-lg justify-center transition-all duration-300 ease-in-out -translate-y-6";
+            return "flex relative w-64 h-64 -top-16 shadow-lg justify-center transition-all duration-300 ease-in-out -translate-y-8";
         }
         return "flex relative w-64 h-64 -top-16 shadow-lg justify-center transition-all duration-300 ease-in-out";
     }

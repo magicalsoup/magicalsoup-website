@@ -21,10 +21,12 @@ export default function Home() {
       <main>
         <div className="absolute top-0 bg-blossom w-full h-screen bg-cover bg-fixed">
           <div className="flex w-full h-screen justify-center items-center">
-            <div className="flex justify-center items-center border-8 border-#fff h-1/5 w-1/2 md:h-1/3 backdrop-blur-md">
-              <button className="explore-btn font-body text-xl sm:text3xl md:text-5xl lg:text-7xl">
-                <a className="explore-text" href="#info">PortFolio</a>
-              </button>
+            <div className="flex justify-center items-center border-8 border-#fff h-1/5 w-1/2 md:h-1/3 backdrop-blur-md" href="#info">
+              <a className="explore-btn font-body text-2xl sm:text-6xl lg:text-7xl" href="#info">
+                <div className="explore-text">
+                  Portfolio
+                </div>
+              </a>
             </div>                
           </div>
 
@@ -33,15 +35,17 @@ export default function Home() {
               <div>
                 <h2 className="text-5xl font-bold text-#fff py-4 font-body">Hi, I'm James</h2>
               </div>
+
               <div className="grid grid-rows-1 grid-cols-3 pt-24">
                 {HobbyData.map((item) => 
                   <Card props={item}></Card>
                 )}
               </div>
+              
             </div>
           </div>
           <div className="relative bg-blossom w-full h-screen bg-cover bg-fixed">
-            <div></div>
+            <div>{/*for #contact */}</div>
           </div>
         </div>
       </main>

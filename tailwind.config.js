@@ -7,7 +7,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: theme => ({
-        'blossom': "url('/images/Anime Background.jpg')"
+        'blossom': "url('/images/Anime Background.jpg')",
+        'projects': "url('/images/Anime Scenery.jpg')"
       }),
       colors: {
         '#2b1055': '#2b1055',
@@ -17,7 +18,9 @@ module.exports = {
       }
     }
   },
-  plugins: [],
+  plugins: [
+    require ('@tailwindcss/typography'),
+  ],
   variants: {
     extend: {
       opacity: ["group-hover"]

@@ -9,7 +9,7 @@ export default function NavBar() {
                 <a className="font-bold font-body tracking-wide text-4xl text-white">James Su</a>
             </Link>
             <ul className="flex justify-center items-center">
-                <Link href="#about">
+                <Link href="/#info">
                     <a className="ml-5 px-3.5 py-1.5 text-white rounded-xl 
                     transition-all duration-300 ease-in-out hover:text-#2b1055 hover:bg-white">About</a>
                 </Link>
@@ -18,7 +18,7 @@ export default function NavBar() {
                     transition-all duration-300 ease-in-out hover:text-#2b1055 hover:bg-white">Projects</a>
                 </Link>
                 
-                <Link href="/Blog">
+                <Link href="/blog">
                     <a className="ml-5 px-3.5 py-1.5 text-white rounded-xl 
                     transition-all duration-300 ease-in-out hover:text-#2b1055 hover:bg-white">Blog</a>
                 </Link>

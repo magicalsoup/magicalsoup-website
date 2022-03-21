@@ -20,9 +20,9 @@ export default function Home({ allPostsData }) {
       </Head>
       <NavBar></NavBar>
       <main>
-        <div className="flex top-0 bg-projects w-full h-screen bg-fixed bg-center bg-scale-down bg-no-repeat">
-          <div className="relative flex flex-col w-full items-center pt-24">
-            <div className="flex justify-center w-full backdrop-blur-sm">
+        <div className="flex top-0 bg-blog w-full h-screen bg-fixed bg-center bg-scale-down bg-no-repeat">
+          <div className="relative flex flex-col w-full h-full items-center">
+            <div className="relative top-[30%] flex justify-center w-full backdrop-blur-sm">
               <div className="grid">
                 {allPostsData.map(({ id, date, title }) => (
                 <div className="flex flex-col justify-center text-#fff">

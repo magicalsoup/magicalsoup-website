@@ -12,7 +12,7 @@ const HobbyData = [
         description: "Watching esports has grown into a pastime for me. I spend less time actually gaming and more watching, as its easier to manage my time.",
     },
     {
-        imageSrc: "https://w0.peakpx.com/wallpaper/468/979/HD-wallpaper-anime-landscape-falling-stars-sunset-clouds-anime-girl-scenic-anime.jpg",
+        imageSrc: "../images/hobbies/music image.jpg",
         title: "Music",
         description: "I usually always listen to music when I work, it just gets me into the mood",
     }

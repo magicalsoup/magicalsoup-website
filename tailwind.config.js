@@ -2,12 +2,15 @@ module.exports = {
   mode: 'jit',
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    // blog font doesn't actually work, need to find one
     fontFamily: {
-      'body': ['Playfair display']
+      'body': ['Playfair display'],
+      'blog': ['Platform']
     },
     extend: {
       backgroundImage: theme => ({
         'blossom': "url('/images/Anime Background.jpg')",
+        'blog': "url('/images/Anime Gate Scenery.jpg')",
         'projects': "url('/images/Anime Scenery.jpg')"
       }),
       colors: {

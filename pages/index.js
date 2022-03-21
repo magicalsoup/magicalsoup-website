@@ -1,14 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
 import Card from '../components/card';
-import HobbyData from '../data/hobbyData';
 import NavBar from '../components/navbar';
+import HobbyData from '../data/hobbyData';
 import Link from 'next/link';
 export default function Home() {
-
-  const getHobbyName = () => {
-    return true;
-  }
 
   return (
     <>
@@ -30,7 +26,7 @@ export default function Home() {
 
           <div className="flex flex-col w-full max-h-none bg-#2b1055" id="info">
               {/*TODO make padding responsive */}
-              <div className="self-start px-20 py-10 w-full">
+              <div className="self-start px-4 lg:px-20 py-10 w-full">
                 <img src="..\images\profile_pic.png" className="max-w-xs lg:max-w-sm float-right p-4"/>
                 <h2 className="text-5xl self-start text-gray-300 font-body py-4">About Me</h2>
                 <p className="clear-left text-2xl self-start text-#fff font-body mt-12">
@@ -41,30 +37,14 @@ export default function Home() {
 
               </div>
 
-                <div className="self-start px-20 pb-10 w-full">
-                  <h2 className="text-5xl self-start text-gray-300 font-body py-4">What I like to do</h2>
-                  <div className={getHobbyName()}>
-                      {/*should show for phone + mobile devices*/}
-                      <div className="grid grid-rows-3">
-                        {HobbyData.map((item) =>
-                            
-                            <div>
-
-                            </div>
-                          
-                        )}
-                      </div>
-                    </div>
-
-                    <div className={getHobbyName()}>
-                      <div className="grid grid-rows-1 grid-cols-3 pt-20">
-                        {HobbyData.map((item) => 
-                          <Card props={item}></Card>
-                        )}
-                      </div>
-                    </div>
-                </div>
-              
+              <div className="self-start px-4 lg:px-20 pb-10 w-full">
+                <h2 className="text-5xl self-start text-gray-300 font-body py-4">What I like to do</h2>
+                  <div class="flex flex-wrap-reverse justify-center w-full">
+                    {HobbyData.map((item) => 
+                      <Card props={item}></Card>
+                    )}
+                  </div>
+              </div>
           </div>
           <div className="relative bg-blossom w-full h-screen bg-cover bg-fixed">
             <div className="z-50">

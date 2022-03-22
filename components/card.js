@@ -4,7 +4,7 @@ export default function Card({props}) {
         <div className="card">
             <div className="card__thumb">
                 <img src={props.imageSrc} className="card__image"/>
-                <div class="card__caption">
+                <div className="card__caption">
                     <h2 className="card__title">{props.title}</h2>
                     <p className="card__snippet">{props.description}</p>
                 </div>

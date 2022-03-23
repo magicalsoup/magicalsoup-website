@@ -6,6 +6,7 @@ import HobbyData from '../data/hobbyData';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub, faInstagram} from "@fortawesome/free-brands-svg-icons"
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons"
+import Contacts from '../components/contacts';
 export default function Home() {
 
   return (
@@ -81,7 +82,7 @@ export default function Home() {
                   </div>
               </div>
           </div>
-              
+          <Contacts></Contacts>
         </div>
       </main>
     </>

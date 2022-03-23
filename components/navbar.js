@@ -8,6 +8,11 @@ export default function NavBar() {
                 <a className="font-bold font-body tracking-wide text-4xl text-white">James Su</a>
             </Link>
             <ul className="flex justify-center items-center">
+                <Link href="/">
+                    <a className="ml-5 px-3.5 py-1.5 text-white bg-transparent rounded-xl 
+                    transition-all duration-300 ease-in-out hover:text-zinc-800 hover:bg-white">HOME</a>
+                </Link>
+
                 <Link href="/#about">
                     <a className="ml-5 px-3.5 py-1.5 text-white rounded-xl 
                     transition-all duration-300 ease-in-out hover:text-zinc-800 hover:bg-white">ABOUT</a>
@@ -22,12 +27,7 @@ export default function NavBar() {
                     transition-all duration-300 ease-in-out hover:text-zinc-800 hover:bg-white">BLOG</a>
                 </Link>
 
-                <Link href="../resume/James Su Resume.pdf">
-                    <a className="ml-5 px-3.5 py-1.5 text-white bg-transparent rounded-xl 
-                    transition-all duration-300 ease-in-out hover:text-zinc-800 hover:bg-white" target="_blank">RESUME</a>
-                </Link>
-
-                <Link href="/#about">
+                <Link href="#contact">
                     <a className="ml-5 px-3.5 py-1.5 text-white rounded-xl 
                     transition-all duration-300 ease-in-out hover:text-zinc-800 hover:bg-white">CONTACT</a>
                 </Link>

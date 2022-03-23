@@ -1,6 +1,7 @@
 
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Link from 'next/link';
+import Contacts from '../../components/contacts';
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)

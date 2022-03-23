@@ -3,6 +3,7 @@ import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
 import NavBar from '../../components/navbar';
+import Contacts from '../../components/contacts';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -46,6 +47,7 @@ export default function Home({ allPostsData }) {
             </div>
           </div>
         </div>
+        <Contacts></Contacts>
       </main>
       </>
     )

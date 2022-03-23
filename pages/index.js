@@ -18,10 +18,10 @@ export default function Home() {
       <main>
         <div className="bg-blossom w-full h-screen bg-cover bg-fixed">
           <div className="flex w-full h-screen justify-center items-center">
-            <div className="flex justify-center items-center border-8 border-#fff h-1/5 w-1/2 md:h-1/3 backdrop-blur-md" href="#info">
-              <a className="explore-btn font-body text-2xl sm:text-6xl lg:text-7xl" href="#about">
+            <div className="flex justify-center items-center border-8 border-#fff h-1/5 w-2/3 md:h-1/3 md:w-1/2 backdrop-blur-md" href="#info">
+              <a className="explore-btn font-body text-2xl sm:text-5xl md:text-6xl lg:text-7xl" href="#about">
                 <div className="explore-text">
-                  Portfolio
+                  About Me
                 </div>
               </a>
             </div>                
@@ -44,28 +44,28 @@ export default function Home() {
                   </a>
                   <div className="flex w-full py-2">
                     <div className="flex">
-                        <a className="pr-4" href="\blog">
+                        <a className="pr-4" href="https://www.instagram.com/magical_soup/">
                             <FontAwesomeIcon
                                 icon={faInstagram}
-                                className="transition-all duration-300 ease-in-out text-7xl sm:text-8xl hover:opacity-50"
+                                className="transition-all duration-300 ease-in-out text-7xl sm:text-8xl sm:hover:scale-125"
                             />
                         </a>
                         <a className="pr-4" href="https://github.com/magicalsoup">
                             <FontAwesomeIcon
                                 icon={faGithub}
-                                className="transition-all duration-300 ease-in-out text-7xl sm:text-8xl hover:opacity-50"
+                                className="transition-all duration-300 ease-in-out text-7xl sm:text-8xl sm:hover:scale-125"
                             />
                         </a>
                         <a className="pr-4" href="mailto:amagicalsoup@gmail.com">
                             <FontAwesomeIcon
                                 icon={faEnvelopeSquare}
-                                className="transition-all duration-300 ease-in-out text-7xl sm:text-8xl hover:opacity-50"
+                                className="transition-all duration-300 ease-in-out text-7xl sm:text-8xl sm:hover:scale-125"
                             />
                         </a>
                         <a className="pr-4" href="https://www.linkedin.com/in/james-su-2093351a4/">
                             <FontAwesomeIcon
                                 icon={faLinkedin}
-                                className="transition-all duration-300 ease-in-out text-7xl sm:text-8xl hover:opacity-50"
+                                className="transition-all duration-300 ease-in-out text-7xl sm:text-8xl sm:hover:scale-125"
                             />
                         </a>
                     </div>
@@ -75,7 +75,7 @@ export default function Home() {
 
               <div className="self-start px-4 lg:px-20 pb-10 w-full bg-#FFF1E1 pt-12">
                 <h2 className="text-5xl self-start underline font-body py-4 ">What I like to do</h2>
-                  <div class="flex flex-wrap justify-center w-full">
+                  <div className="flex flex-wrap justify-center w-full">
                     {HobbyData.map((item) => 
                       <Card props={item}></Card>
                     )}

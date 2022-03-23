@@ -45,8 +45,6 @@
 }
 
 
-
-
 .resume-btn {
     position: relative; 
     width: 100%; 
@@ -79,7 +77,6 @@
     transform: scaleX(1);
     transform-origin: center;
 }
-
 
 .card {
     width: 500px;
@@ -155,6 +152,40 @@
     -webkit-box-orient: vertical; 
 }
 
+.slideIn {
+    top: 0;
+    animation: slideIn 0.25s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.slideOut {
+    animation: slideOut 0.25s ease-in;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes slideIn {
+    0% {
+        opacity: 0.8;
+        transform: translate(-40rem, 0);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0.8;
+        transform: translate(-40rem, 0);
+    }
+  }
+
 @media only screen and (min-width:1280px) {
     .card__thumb::after {
         top: calc(100% - 140px);
@@ -174,4 +205,30 @@
         transform: translateY(-10px);
     }
     */
+}
+
+@media (max-width: 768px) { /*mobile size*/
+    .navbar-desktop {
+        display: none;
+    }
+    .explore-btn {
+        background: -webkit-linear-gradient(0deg, transparent 50%, #fff 50%);  background-size: 300vw 100vw; 
+    }
+    .explore-btn:hover {
+        background-position: 70vw 0; 
+    }
+    .explore-text:after {
+        width: 70%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 5%;
+        left: 15%;
+    }
+}
+
+@media (min-width: 768px) { /*desktop size*/
+    .navbar-mobile {
+        display: none;
+    }
+
 }

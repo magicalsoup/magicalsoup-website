@@ -13,7 +13,7 @@ export default function Contacts() {
                 Richmond Hill, ON, CA
             </div>
             <div className="text-gray-500">
-                Copyright @ 2022 | James Su
+                Copyright © 2022 | James Su
             </div>
         </div>
     )

@@ -19,7 +19,7 @@ export default function Home() {
         <div className="bg-blossom w-full h-screen bg-cover bg-fixed">
           <div className="flex w-full h-screen justify-center items-center">
             <div className="flex justify-center items-center border-8 border-#fff h-1/5 w-2/3 md:h-1/3 md:w-1/2 backdrop-blur-md" href="#info">
-              <a className="explore-btn font-body text-2xl sm:text-5xl md:text-6xl lg:text-7xl" href="#about">
+              <a className="explore-btn font-body text-2xl sm:text-5xl lg:text-7xl" href="#about">
                 <div className="explore-text">
                   About Me
                 </div>
@@ -27,11 +27,11 @@ export default function Home() {
             </div>                
           </div>
 
-          <div className="flex flex-col w-full max-h-none bg-#FFFAF4 pt-12" id="about">
+          <div className="flex flex-col w-full max-h-none bg-#FFFAF4 pt-8 sm:pt-10" id="about">
               <div className="self-start px-4 lg:px-20 py-10 w-full">
                 <img src="..\images\profile_pic.png" className="max-w-xs lg:max-w-sm float-right p-4 rounded-full"/>
                 <h2 className="text-5xl self-start underline font-body py-4">About Me</h2>
-                <p className="clear-left text-2xl self-start font-blog mt-12">
+                <p className="clear-left text-2xl self-start font-blog mt-6">
                   Hi, I'm James, you might know me as magicalsoup. I like to dabble in different fields of computer science,
                   like creating websites or competitive programming. 
                 </p>
@@ -43,7 +43,7 @@ export default function Home() {
                     </div>
                   </a>
                   <div className="flex w-full py-2">
-                    <div className="flex">
+                    <div className="flex flex-wrap sm:flex-none">
                         <a className="pr-4" href="https://www.instagram.com/magical_soup/">
                             <FontAwesomeIcon
                                 icon={faInstagram}
@@ -76,8 +76,8 @@ export default function Home() {
               <div className="self-start px-4 lg:px-20 pb-10 w-full bg-#FFF1E1 pt-12">
                 <h2 className="text-5xl self-start underline font-body py-4 ">What I like to do</h2>
                   <div className="flex flex-wrap justify-center w-full">
-                    {HobbyData.map((item) => 
-                      <Card props={item}></Card>
+                    {HobbyData.map((item, index) => 
+                      <Card props={item} key={index}></Card>
                     )}
                   </div>
               </div>

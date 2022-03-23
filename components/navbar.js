@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 export default function NavBar() {
-    // TODO make navbar responsive
+    
     const [showSideBar, toggleShowSideBar] = useState(false);
     const [closeSideBar, toggleCloseSideBar] = useState(0); // for when the user clicks on the hamburger menu
 
@@ -36,7 +36,7 @@ export default function NavBar() {
             <Link href="/">
                 <a className="font-bold font-body tracking-wide text-4xl text-white">James Su</a>
             </Link>
-            <ul className="flex justify-center items-center">
+            <div className="flex justify-center items-center">
                 <Link href="/">
                     <a className="ml-5 px-3.5 py-1.5 text-white rounded-xl tracking-wide
                     transition-all duration-300 ease-in-out hover:text-zinc-800 hover:bg-white">HOME</a>
@@ -60,11 +60,11 @@ export default function NavBar() {
                     <a className="ml-5 px-3.5 py-1.5 text-white rounded-xl tracking-wide
                     transition-all duration-300 ease-in-out hover:text-zinc-800 hover:bg-white">CONTACT</a>
                 </Link>
-            </ul>
+            </div>
         </div>
 
         <div className="navbar-mobile flex top-0 fixed items-center justify-between z-50 py-4 px-8 lg:px-24 w-full top-0 left-0 bg-zinc-800">
-            <div></div>
+            <div className="text-#fff text-3xl px-4">James Su</div> {/*TODO add name logo*/}
             <button onClick={() => clickedHamburger()}>
                 <FontAwesomeIcon
                     icon={faBars}

@@ -26,7 +26,7 @@ export default function Home() {
             </div>                
           </div>
 
-          <div className="flex flex-col w-full max-h-none bg-rose-200 pt-12" id="about">
+          <div className="flex flex-col w-full max-h-none bg-#FFFAF4 pt-12" id="about">
               <div className="self-start px-4 lg:px-20 py-10 w-full">
                 <img src="..\images\profile_pic.png" className="max-w-xs lg:max-w-sm float-right p-4 rounded-full"/>
                 <h2 className="text-5xl self-start underline font-body py-4">About Me</h2>
@@ -46,29 +46,25 @@ export default function Home() {
                         <a className="pr-4" href="\blog">
                             <FontAwesomeIcon
                                 icon={faInstagram}
-                                style={{ fontSize: 100}}
-                                className="transition-all duration-300 ease-in-out hover:opacity-50"
+                                className="transition-all duration-300 ease-in-out text-7xl sm:text-8xl hover:opacity-50"
                             />
                         </a>
-                        <a className="pr-4" href="">
+                        <a className="pr-4" href="https://github.com/magicalsoup">
                             <FontAwesomeIcon
                                 icon={faGithub}
-                                style={{ fontSize: 100}}
-                                className="transition-all duration-300 ease-in-out hover:opacity-50"
+                                className="transition-all duration-300 ease-in-out text-7xl sm:text-8xl hover:opacity-50"
                             />
                         </a>
-                        <a className="pr-4" href="">
+                        <a className="pr-4" href="mailto:amagicalsoup@gmail.com">
                             <FontAwesomeIcon
                                 icon={faEnvelopeSquare}
-                                style={{ fontSize: 100}}
-                                className="transition-all duration-300 ease-in-out hover:opacity-50"
+                                className="transition-all duration-300 ease-in-out text-7xl sm:text-8xl hover:opacity-50"
                             />
                         </a>
-                        <a className="pr-4" href="">
+                        <a className="pr-4" href="https://www.linkedin.com/in/james-su-2093351a4/">
                             <FontAwesomeIcon
                                 icon={faLinkedin}
-                                style={{ fontSize: 100}}
-                                className="transition-all duration-300 ease-in-out hover:opacity-50"
+                                className="transition-all duration-300 ease-in-out text-7xl sm:text-8xl hover:opacity-50"
                             />
                         </a>
                     </div>
@@ -76,8 +72,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="self-start px-4 lg:px-20 pb-10 w-full bg-rose-300 pt-12">
-                <h2 className="text-5xl self-start underline font-body py-4">What I like to do</h2>
+              <div className="self-start px-4 lg:px-20 pb-10 w-full bg-#FFF1E1 pt-12">
+                <h2 className="text-5xl self-start underline font-body py-4 ">What I like to do</h2>
                   <div class="flex flex-wrap justify-center w-full">
                     {HobbyData.map((item) => 
                       <Card props={item}></Card>

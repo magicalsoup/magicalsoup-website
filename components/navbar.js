@@ -32,7 +32,7 @@ export default function NavBar() {
 
     return <>
 
-        <div className="navbar-desktop flex top-0 fixed items-center justify-between z-50 py-4 px-8 lg:px-24 w-full top-0 left-0 bg-zinc-800">
+        <div className="invisible md:visible flex top-0 fixed items-center justify-between z-50 py-4 px-8 lg:px-24 w-full top-0 left-0 bg-zinc-800">
             <Link href="/">
                 <a className="font-bold font-body tracking-wide text-4xl text-white">James Su</a>
             </Link>
@@ -63,7 +63,7 @@ export default function NavBar() {
             </div>
         </div>
 
-        <div className="navbar-mobile flex top-0 fixed items-center justify-between z-50 py-4 px-8 lg:px-24 w-full top-0 left-0 bg-zinc-800">
+        <div className="md:hidden flex top-0 fixed items-center justify-between z-50 py-4 px-8 lg:px-24 w-full top-0 left-0 bg-zinc-800">
             <div className="text-#fff text-3xl px-4">James Su</div> {/*TODO add name logo*/}
             <button onClick={() => clickedHamburger()}>
                 <FontAwesomeIcon
@@ -72,7 +72,7 @@ export default function NavBar() {
                 />
             </button>
         </div>
-        <div className="navbar-mobile">
+        <div className="md:hidden">
             <div className={getSideBarName()}>
                 <div className="flex flex-col pt-8 pl-4">
                     <Link href="/" className="">

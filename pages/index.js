@@ -17,7 +17,7 @@ export default function Home() {
       <NavBar></NavBar>
       <main>
         <div className="bg-blossom w-full h-screen bg-cover bg-fixed">
-          <div className="flex w-full h-screen justify-center items-center">
+          <div className="phone-hidden flex w-full h-screen justify-center items-center">
             <div className="flex justify-center items-center border-8 border-#fff h-1/5 w-2/3 md:h-1/3 md:w-1/2 backdrop-blur-md" href="#info">
               <a className="explore-btn font-body text-2xl sm:text-5xl lg:text-7xl" href="#about">
                 <div className="explore-text">

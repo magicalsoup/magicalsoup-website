@@ -24,7 +24,7 @@ export default function Home({ allPostsData }) {
         <div className="flex top-0 bg-blog w-full h-screen bg-fixed bg-center bg-scale-down bg-no-repeat">
           <div className="relative flex flex-col w-full h-full items-center">
             <div className="relative top-[30%] flex justify-center w-full backdrop-blur-sm">
-              <div className="grid">
+              <div className="flex flex-col px-4">
                 {allPostsData.map(({ id, date, title }) => (
                 <div className="flex flex-col justify-center text-#fff">
                    <Link href={`/blog/${id}`}>

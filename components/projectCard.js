@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Link from 'next/link';
-
 
 export default function ProjectCard({props}) {
 
@@ -20,11 +19,9 @@ export default function ProjectCard({props}) {
         return "px-3.5 py-1.5 w-32 rounded-md bg-sky-400";
     }
 
-
     return (
         <div>
             <div className="bg-projects w-full bg-fixed bg-center bg-scale-down bg-no-repeat">
-                {/*make padding responsive*/}
                 <div className="flex justify-center w-full h-full p-4 md:px-20 bg-transparent">
                     <div className="projects-desktop flex w-full h-full bg-white rounded-md border-4 border-zinc-800
                     transition-all duration-500 ease-in-out hover:-translate-y-2">
@@ -35,7 +32,7 @@ export default function ProjectCard({props}) {
                                 <span className="border-4 border-black w-full"></span>
                             </div>  
                             <p className="py-2">{props.description}</p>
-                            <div className="flex items-center justify-around h-full">
+                            <div className="flex items-center justify-around mt-20 h-full">
                                 {props.linksData.map((item, index) => 
                                     <button className="px-3.5 py-1.5 text-zinc-800 tracking-wide bg-white border-4 border-zinc-800
                                     transition-all duration-300 ease-in-out hover:bg-zinc-600 hover:text-white" key={index}>
@@ -62,7 +59,7 @@ export default function ProjectCard({props}) {
                                 {show? "Close" : "Learn More"}
                             </button>
                         </div>
-                        <div className="flex items-center justify-around h-full">
+                        <div className="flex items-center justify-between px-4 h-full">
                                 {props.linksData.map((item, index) => 
                                     <button className="px-3.5 py-1.5 text-zinc-800 tracking-wide bg-white border-4 border-zinc-800
                                     transition-all duration-300 ease-in-out hover:bg-zinc-600 hover:text-white" key={index}>
@@ -73,9 +70,33 @@ export default function ProjectCard({props}) {
                                 )}
                         </div>
                     </div>
+                    {/*For phone (< 640px) */}
+                    <div className="sm:hidden flex flex-col w-full bg-white rounded-md border-4 border-zinc-800 p-4">
+                        <img src={props.imageSrc} className="w-full h-full object-scale-down rounded-md p-4"/>
+                        <div className="">
+                            <div className="flex flex-col px-4">
+                                <h2 className="text-3xl py-4">{props.title}</h2>
+                                <span className="border-2 bg-black border-black w-full"></span>
+                                <div className={show? "" : "truncate"}>{props.description}</div>
+                            </div>
+                        </div>
+                        <div className="p-4">
+                            <button className="text-gray-400 cursor-pointer" onClick={() => setShow(!show)}>
+                                {show? "Show less" : "Show more"}
+                            </button>
+                        </div>
+                        <div className="flex items-center justify-between h-full">
+                                {props.linksData.map((item, index) => 
+                                    <button className="px-3.5 py-1.5 text-zinc-800 tracking-wide bg-white border-4 border-zinc-800" key={index}>
+                                        <Link href={item.link}>
+                                            <a>{item.linkTitle}</a>
+                                        </Link>
+                                    </button>
+                                )}
+                        </div>
+                    </div>
                 </div>
             </div>
-          
         </div>
     )
 }

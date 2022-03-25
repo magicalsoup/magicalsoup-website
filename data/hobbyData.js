@@ -7,7 +7,7 @@ const HobbyData = [
         description: "I've skied back in grade 5, since then, I've always been looking for higher and and more challenging peaks. I hope to share more of my skiing experience in my blogs.",
     },
     {
-        imageSrc: "https://wallpaperaccess.com/full/41076.jpg",
+        imageSrc: "../images/hobbies/programming CCC.jpg",
         title: "Programming",
         description: "I can't exactly pinpoint what it is, but I'm always excited to learn new frameworks, tools, languages in this ever evolving computing field.",
     },

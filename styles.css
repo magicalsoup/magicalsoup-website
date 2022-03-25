@@ -101,6 +101,7 @@
     position: relative;
     max-height: 400px;
     overflow: hidden;
+    height: 100%;
 }
 
 .card__thumb::after {
@@ -153,38 +154,13 @@
 }
 
 .slideIn {
-    top: 0;
-    animation: slideIn 0.25s ease-out;
-    animation-fill-mode: forwards;
+    transition: all 0.4s ease;
 }
 
 .slideOut {
-    animation: slideOut 0.25s ease-in;
-    animation-fill-mode: forwards;
+    transition: all 0.4s ease;
+    transform: translateX(-40rem);
 }
-
-
-
-@keyframes slideIn {
-    0% {
-        opacity: 0.8;
-        transform: translate(-40rem, 0);
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes slideOut {
-    0% {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
-    100% {
-        opacity: 0.8;
-        transform: translate(-40rem, 0);
-    }
-  }
 
 @media only screen and (min-width:1280px) {
     .card__thumb::after {
@@ -226,7 +202,7 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023.9px) {
     .projects-desktop {
         display: none;
     }
@@ -244,11 +220,14 @@
     }
 }
 
-@media (min-width: 768px) { /*desktop size*/
-    .navbar-mobile {
+
+@media (max-width: 639.9px) {
+    .phone-hidden {
         display: none;
     }
-
+    .projects-mobile {
+        display: none;
+    }
 }
 
 @media (min-width: 1024px) {

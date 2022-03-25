@@ -1,6 +1,6 @@
-
-import { getAllPostIds, getPostData } from '../../lib/posts'
-import Link from 'next/link';
+import { getAllPostIds, getPostData } from '../../lib/posts';
+import Head from 'next/head';
+import NavBar from '../../components/navbar';
 import Contacts from '../../components/contacts';
 
 export async function getStaticProps({ params }) {
@@ -21,22 +21,29 @@ export async function getStaticPaths() {
 }
 export default function Post({ postData }) {
   return (
-    <div className="top-0 bg-gray-900 bg-fixed min-h-screen">
-      <div>
-        <div className="flex flex-col items-center font-body justify-center">
-          <div className="flex flex-col w-full items-center">
-            <div className="text-slate-400 text-5xl py-4">  
-              {postData.title}
+    <>
+     <Head>
+        <title>{postData.id}</title>
+      </Head>
+      <NavBar></NavBar>
+      <div className="top-0 bg-blog bg-fixed min-h-screen">
+        <div>
+          <div className="flex flex-col items-center font-body justify-center px-4 pt-20 backdrop-blur-md">
+            <div className="flex flex-col w-full items-center">
+              <div className="text-slate-400 text-3xl text-center py-4">  
+                {postData.title}
+              </div>
+              <div className="text-#fff italic text-align-left">
+                {postData.date}
+              </div>
             </div>
-            <div className="text-#fff italic text-align-left">
-              {postData.date}
-            </div>
+            <article className="prose dark:prose-invert prose-lg text-#fff prose-strong:text-#fff  py-20">
+              <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
+            </article>
           </div>
-          <article className="prose dark:prose-invert prose-lg text-#fff prose-strong:text-#fff  py-20">
-            <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
-          </article>
         </div>
-      </div>
-    </div> 
+      </div> 
+      <Contacts></Contacts>
+    </>
   )
 }

@@ -3,13 +3,13 @@ const HobbyData = [
     {
         imageSrc: "../images/hobbies/ski image.jpg",
         //imageSrc: "https://source.unsplash.com/71u2fOofI-U/300x510",
-        title: "Programming",
-        description: "I can't exactly pinpoint what it is, but I'm always excited to learn new frameworks, tools, languages in this ever evolving computing field.",
+        title: "Skiing",
+        description: "I've skied back in grade 5, since then, I've always been looking for higher and and more challenging peaks. I hope to share more of my skiing experience in my blogs.",
     },
     {
         imageSrc: "https://wallpaperaccess.com/full/41076.jpg",
-        title: "Esports",
-        description: "Watching esports has grown into a pastime for me. I spend less time actually gaming and more watching, as its easier to manage my time.",
+        title: "Programming",
+        description: "I can't exactly pinpoint what it is, but I'm always excited to learn new frameworks, tools, languages in this ever evolving computing field.",
     },
     {
         imageSrc: "../images/hobbies/music image.jpg",

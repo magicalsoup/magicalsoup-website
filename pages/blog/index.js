@@ -40,7 +40,6 @@ export default function Home({ allPostsData }) {
                           {date}
                         </div>
                     </div>
-                    
                 </div>
                 ))}
               </div>

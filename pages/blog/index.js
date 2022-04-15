@@ -30,7 +30,7 @@ export default function Home({ allPostsData }) {
             {allPostsData.map(({id, date, title, imageSrc}) => (
               <div className="flex flex-col w-full md:w-2/3 items-start">
                   <a className="flex w-full justify-center" href={`/blog/${id}`}>
-                    <img src={imageSrc} className="object-fill w-full h-full aspect-video border-2"/>
+                    <img src={imageSrc} className="object-fill w-full h-full aspect-video rounded-xl border-2"/>
                   </a>
                   <div className="text-gray-500">
                     {formatDate(date)}

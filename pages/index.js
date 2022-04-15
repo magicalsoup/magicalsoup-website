@@ -15,7 +15,9 @@ export default function Home() {
         <div id="container">
           <div className="flex flex-col h-screen justify-center">
             <div className="pl-12 w-4/5 lg:w-2/5 space-y-8">
-              <h1 className="typed-out text-3xl md:text-7xl block" id="body-text">Hi, I'm <a className="font-bold text-pink-500">James</a></h1>
+              <h1 className="typed-out text-3xl md:text-7xl block" id="body-text">
+                Hi, I'm <a className="font-bold underline decoration-pink-500">James</a>
+              </h1>
               <p className="text-white text-xl" id="body-text">
                 You might know me as magicalsoup. I like to dabble in different fields of computer science, 
                 like creating websites or competitive programming.

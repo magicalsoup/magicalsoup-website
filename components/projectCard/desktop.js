@@ -12,7 +12,7 @@ export default function Desktop({props}) {
                     <h2 className="text-4xl py-4">{props.title}</h2>
                     <span className="border-4 border-black w-full"></span>
                 </div>  
-                <p className="py-2">{props.description}</p>
+                <p className="py-2 text-xl">{props.description}</p>
                 <div className="flex items-center mt-20 h-full">
                     {props.linksData.map((item, index) => 
                         <div className="px-4">

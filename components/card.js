@@ -38,7 +38,7 @@ export default function Card({props, number}) {
         if(number == 2) {
             return "flex items-center justify-center p-12 bg-white aspect-square border-2 hover:border-teal-400 hover:cursor-pointer";
         } 
-        return "flex items-center justify-center p-12 bg-white aspect-square border-2  hover:border-blue-400 hover:cursor-pointer";
+        return "flex items-center justify-center p-12 bg-white aspect-square border-2 hover:border-blue-400 hover:cursor-pointer";
     }
 
     return (
@@ -50,9 +50,8 @@ export default function Card({props, number}) {
                 <div className="text-3xl underline text-center" id="body-text">
                     <h1 className={getTitleStyle()}>{props.title}</h1>
                 </div>
-                <div className="text-center" id="body-text">
+                <div className="text-center text-xl" id="body-text">
                     <h1 className={getTextColor()}>{props.subTitle}</h1>
-                    
                 </div>
               </div> 
         </div>

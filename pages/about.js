@@ -21,12 +21,12 @@ export default function() {
         </div>
         <div className="w-full md:w-2/3 px-8 py-32 space-y-8 bg-[#f5f9ff] rounded-3xl">
           <img src="..\images\profile_pic.png" className="max-w-xs lg:max-w-sm float-right p-4 rounded-full"/>
-          <p className="text-lg" id="body-text">
+          <p className="text-xl" id="body-text">
             Hi, my name is <a className="text-teal-400 text-xl font-bold">James Su</a>. I am an aspiring 17 year old student interested in competitive programming and web development. 
             You can view my progress through my blogs and my projects that are on this site! Currently I'm looking at other branches
             of the computing field, such as servers, linux systems, and security. Join me on my journey!
           </p>
-          <p className="text-lg" id="body-text">
+          <p className="text-xl" id="body-text">
             Currently I'm finishing my highschool education at Bayview Secondary School and the <a className="font-bold">International Baccalaureate</a> program. 
             But feel free to contact me for any interesting ideas!
           </p>

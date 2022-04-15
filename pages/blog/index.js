@@ -1,9 +1,8 @@
-import { getSortedPostsData } from '../../lib/posts'
+import { getSortedPostsData, formatDate } from '../../lib/getBlogPosts'
 import React from 'react';
-import Link from 'next/link';
 import Head from 'next/head';
 import NavBar from '../../components/navbar';
-import Contacts from '../../components/contacts';
+import Footer from '../../components/footer';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -17,36 +16,33 @@ export default function Home({ allPostsData }) {
     return (
       <>
       <Head>
-        <title>Blog</title>
+        <title>James' Blog</title>
       </Head>
       <NavBar></NavBar>
       <main>
-        <div className="flex top-0 bg-blog w-full h-screen bg-fixed bg-center bg-scale-down bg-no-repeat">
-          <div className="relative flex flex-col w-full h-full items-center">
-            <div className="relative top-[30%] flex justify-center w-full backdrop-blur-sm">
-              <div className="flex flex-col px-4">
-                {allPostsData.map(({ id, date, title }) => (
-                <div className="flex flex-col justify-center text-#fff">
-                   <Link href={`/blog/${id}`}>
-                    <a className="text-lg md:text-3xl self-start text-gray-300 font-body py-4">
-                        {title}
-                    </a>
-                    </Link>
-                    <div className="flex justify-between">
-                       <Link href={`/blog/${id}`}>
-                          <a className="text-cyan-400 underline underline-offset-2">Read more</a>
-                        </Link>
-                        <div className="italic">
-                          {date}
-                        </div>
-                    </div>
-                </div>
-                ))}
+        <div className="flex flex-col w-full min-h-screen items-center space-y-16 py-24">
+          <div className="flex flex-col w-full items-center space-y-4 text-center" id="body-text">
+            <p className="text-5xl font-bold">Blog.</p>
+            <p className="text-lg text-gray-600">Learn about my computer science journey.</p>
+            <p className="text-lg text-gray-600">Also some life experiences 🤗.</p>
+          </div>
+          <div className="flex flex-col w-full items-center p-8 space-y-16" id="body-text">
+            {allPostsData.map(({id, date, title, imageSrc}) => (
+              <div className="flex flex-col w-full md:w-2/3 items-start">
+                  <a className="flex w-full justify-center" href={`/blog/${id}`}>
+                    <img src={imageSrc} className="object-fill w-full h-full aspect-video border-2"/>
+                  </a>
+                  <div className="text-gray-500">
+                    {formatDate(date)}
+                  </div>
+                  <a className="text-3xl transition-all duration-300 ease-in-out hover:text-teal-500" href={`/blog/${id}`}>
+                    {title}
+                  </a>
               </div>
-            </div>
+            ))}
           </div>
         </div>
-        <Contacts></Contacts>
+        <Footer></Footer>
       </main>
       </>
     )

@@ -1,25 +1,30 @@
+import ProjectData from '../data/projectData';
+import ProjectCard from '../components/projectCard/projectCard';
 import React from 'react';
 import Head from 'next/head';
 import NavBar from '../components/navbar';
-import Contacts from '../components/contacts';
-import ProjectData from '../data/projectData';
-import ProjectCard from '../components/projectCard';
-export default function() {
+import Footer from '../components/footer';
+
+export default function () {
     return (
         <>
             <Head>
-            <title>James Su</title>
+            <title>James' Projects</title>
             </Head>
             <NavBar></NavBar>
             <main>
-                <div className="bg-projects w-full h-screen bg-fixed bg-center bg-scale-down bg-no-repeat">
-                    <div className="flex flex-col pt-20">
+                <div className="flex flex-col w-full min-h-screen items-center space-y-16 py-24">
+                   <div className="flex flex-col w-full items-center text-center space-y-4">
+                        <p className="text-5xl font-bold" id="body-text">Projects.</p>
+                        <p className="text-lg text-gray-600" id="body-text">Here are my finished and on-going projects.</p>
+                    </div>
+                    <div className="flex flex-col w-full p-4 lg:px-20 space-y-8" id="body-text">
                         {ProjectData.map((item, index) => 
                             <ProjectCard props={item} key={index}></ProjectCard>
                         )}
                     </div>
-                    <Contacts></Contacts>
                 </div>
+                <Footer></Footer>
             </main>
         </>
     )

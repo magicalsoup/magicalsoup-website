@@ -1,7 +1,7 @@
-import { getAllPostIds, getPostData } from '../../lib/posts';
+import { getAllPostIds, getPostData, formatDate } from '../../lib/getBlogPosts';
 import Head from 'next/head';
 import NavBar from '../../components/navbar';
-import Contacts from '../../components/contacts';
+import Footer from '../../components/footer';
 
 export async function getStaticProps({ params }) {
   const postData = await getPostData(params.id)
@@ -26,24 +26,25 @@ export default function Post({ postData }) {
         <title>{postData.id}</title>
       </Head>
       <NavBar></NavBar>
-      <div className="top-0 bg-blog bg-fixed min-h-screen">
-        <div>
-          <div className="flex flex-col items-center font-body justify-center px-4 pt-20 backdrop-blur-md">
-            <div className="flex flex-col w-full items-center">
-              <div className="text-slate-400 text-3xl text-center py-4">  
-                {postData.title}
-              </div>
-              <div className="text-#fff italic text-align-left">
-                {postData.date}
-              </div>
-            </div>
-            <article className="prose dark:prose-invert prose-lg text-#fff prose-strong:text-#fff  py-20">
-              <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
-            </article>
+      <main>
+        <div className="flex flex-col min-h-screen w-full">
+          {/*TODO make padding responsive */}
+          <div className="flex flex-col items-center pt-24 md:pt-48 text-center text-white space-y-4 h-[70vh] bg-[#1f2a40]" id="body-text">
+            <h1 className="text-xl">{formatDate(postData.date)}</h1>
+            <h1 className="text-3xl font-bold">{postData.title}</h1>
           </div>
-        </div>
-      </div> 
-      <Contacts></Contacts>
+          <div className="flex justify-center min-h-screen w-full bg-[#f5f9ff]">
+            <div className="flex flex-col w-full md:w-3/4 xl:w-2/3 bg-white -translate-y-48 z-10 p-12 rounded-xl">
+              <article className="prose-lg" id="body-text">
+                  <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
+              </article>
+              <a href="/blog"
+                className="text-sky-500 decoration-sky-500 hover:underline" id="body-text">← Back to Blogs Page</a>
+            </div>
+          </div>
+        </div> 
+        <Footer></Footer>
+      </main>
     </>
   )
 }

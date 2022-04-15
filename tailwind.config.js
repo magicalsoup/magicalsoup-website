@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     // blog font doesn't actually work, need to find one
     fontFamily: {
-      'body': ['Playfair display'],
+      'body': ['IBM Plex Mono'],
       'blog': ['Platform']
     },
     extend: {

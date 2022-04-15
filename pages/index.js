@@ -1,14 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
-import Card from '../components/card';
 import NavBar from '../components/navbar';
-import HobbyData from '../data/hobbyData';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub, faInstagram} from "@fortawesome/free-brands-svg-icons"
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons"
-import Contacts from '../components/contacts';
 export default function Home() {
-
   return (
     <>
       <Head>
@@ -16,74 +12,84 @@ export default function Home() {
       </Head>
       <NavBar></NavBar>
       <main>
-        <div className="bg-blossom w-full h-screen bg-cover bg-fixed">
-          <div className="phone-hidden flex w-full h-screen justify-center items-center">
-            <div className="flex justify-center items-center border-8 border-#fff h-1/5 w-2/3 md:h-1/3 md:w-1/2 backdrop-blur-md" href="#info">
-              <a className="explore-btn font-body text-2xl sm:text-5xl lg:text-7xl" href="#about">
-                <div className="explore-text">
-                  About Me
-                </div>
-              </a>
-            </div>                
-          </div>
-
-          <div className="flex flex-col w-full max-h-none bg-#FFFAF4 pt-8 sm:pt-10" id="about">
-              <div className="self-start px-4 lg:px-20 py-10 w-full">
-                <img src="..\images\profile_pic.png" className="max-w-xs lg:max-w-sm float-right p-4 rounded-full"/>
-                <h2 className="text-5xl self-start underline font-body py-4">About Me</h2>
-                <p className="clear-left text-2xl self-start font-blog mt-6">
-                  Hi, I'm James, you might know me as magicalsoup. I like to dabble in different fields of computer science,
-                  like creating websites or competitive programming. 
-                </p>
-
-                <div className="flex flex-col self-end pt-12">
-                  <a className="resume-btn font-body text-2xl sm:text-5xl lg:text-6xl" href="../resume/James Su Resume.pdf">
-                    <div className="resume-text">
-                      Resume
-                    </div>
-                  </a>
-                  <div className="flex w-full py-2">
-                    <div className="flex flex-wrap sm:flex-none">
-                        <a className="pr-4" href="https://www.instagram.com/magical_soup/">
-                            <FontAwesomeIcon
-                                icon={faInstagram}
-                                className="transition-all duration-300 ease-in-out text-7xl sm:text-8xl sm:hover:scale-125"
-                            />
-                        </a>
-                        <a className="pr-4" href="https://github.com/magicalsoup">
-                            <FontAwesomeIcon
-                                icon={faGithub}
-                                className="transition-all duration-300 ease-in-out text-7xl sm:text-8xl sm:hover:scale-125"
-                            />
-                        </a>
-                        <a className="pr-4" href="mailto:amagicalsoup@gmail.com">
-                            <FontAwesomeIcon
-                                icon={faEnvelopeSquare}
-                                className="transition-all duration-300 ease-in-out text-7xl sm:text-8xl sm:hover:scale-125"
-                            />
-                        </a>
-                        <a className="pr-4" href="https://www.linkedin.com/in/james-su-2093351a4/">
-                            <FontAwesomeIcon
-                                icon={faLinkedin}
-                                className="transition-all duration-300 ease-in-out text-7xl sm:text-8xl sm:hover:scale-125"
-                            />
-                        </a>
-                    </div>
-                  </div>
-                </div>
+        <div id="container">
+          <div className="flex flex-col h-screen justify-center">
+            <div className="pl-12 w-4/5 lg:w-2/5 space-y-8">
+              <h1 className="typed-out text-3xl md:text-7xl block" id="body-text">Hi, I'm <a className="font-bold text-pink-500">James</a></h1>
+              <p className="text-white" id="body-text">
+                You might know me as magicalsoup. I like to dabble in different fields of computer science, 
+                like creating websites or competitive programming.
+              </p>
+              <div className="space-x-8 pl-2">
+                <a href="mailto:amagicalsoup@gmail.com">
+                  <FontAwesomeIcon
+                    icon={faEnvelopeSquare}
+                    className="text-white text-4xl transition-all duration-300 ease-in-out hover:text-gray-300"
+                  />
+                </a>
+                <a href="https://github.com/magicalsoup">
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    className="text-white text-4xl transition-all duration-300 ease-in-out hover:text-gray-300"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/james-su-2093351a4/">
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    className="text-white text-4xl transition-all duration-300 ease-in-out hover:text-gray-300"
+                  />
+                </a>
+                <a href="https://www.instagram.com/magical_soup/">
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    className="text-white text-4xl transition-all duration-300 ease-in-out hover:text-gray-300"
+                  />
+                </a>
               </div>
-
-              <div className="self-start px-4 lg:px-20 pb-10 w-full bg-#FFF1E1 pt-12">
-                <h2 className="text-5xl self-start underline font-body py-4 ">What I like to do</h2>
-                  <div className="flex flex-wrap justify-center w-full">
-                    {HobbyData.map((item, index) => 
-                      <Card props={item} key={index}></Card>
-                    )}
-                  </div>
-              </div>
+            </div>
           </div>
-          <Contacts></Contacts>
         </div>
+        <style jsx> {`
+          #container {
+            height: 100vh;
+            // original one
+            //background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); 
+            //animation: gradient-animation 10s ease infinite;
+            background: linear-gradient(230deg, rgb(75, 207, 147), rgb(75, 121, 207), rgb(162, 75, 207)) 0% 0% / 300% 300%;
+            animation: 60s ease 0s infinite normal none running gradient-animation;
+            background-size: 400% 400%;
+          }
+          @keyframes gradient-animation {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+          }
+          .typed-out{
+            overflow: hidden;
+            border-right: .1em solid white;
+            color: white;
+            white-space: nowrap;
+            animation: typing 3s steps(20, end) forwards,
+            blink 1.2s infinite, ease-in-out;
+            width: 0;
+          }
+          @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+          }
+          @keyframes blink {
+            0% { border-color: transparent }
+            50% { border-color: white;}
+            100% {border-color: transparent;}
+          }
+        `}  
+        </style>        
       </main>
     </>
   )

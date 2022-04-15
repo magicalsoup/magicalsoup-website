@@ -38,7 +38,7 @@ export default function Post({ postData }) {
                   <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
               </article>
               <a href="/blog"
-                className="text-sky-500 decoration-sky-500 hover:underline" id="body-text">← Back to Blogs Page</a>
+                className="text-sky-500 decoration-sky-500 hover:underline text-xl" id="body-text">← Back to Blogs Page</a>
             </div>
           </div>
         </div> 

@@ -2,7 +2,7 @@ import React from "react";
 import Head from 'next/head';
 import NavBar from '../components/navbar';
 import Card from "../components/card";
-import PlatformData from "../data/platFormData";
+import PlatformData from "../data/platformData";
 import Footer from '../components/footer';
 
 export default function() {

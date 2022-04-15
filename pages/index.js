@@ -16,7 +16,7 @@ export default function Home() {
           <div className="flex flex-col h-screen justify-center">
             <div className="pl-12 w-4/5 lg:w-2/5 space-y-8">
               <h1 className="typed-out text-3xl md:text-7xl block" id="body-text">Hi, I'm <a className="font-bold text-pink-500">James</a></h1>
-              <p className="text-white" id="body-text">
+              <p className="text-white text-xl" id="body-text">
                 You might know me as magicalsoup. I like to dabble in different fields of computer science, 
                 like creating websites or competitive programming.
               </p>
@@ -24,25 +24,25 @@ export default function Home() {
                 <a href="mailto:amagicalsoup@gmail.com">
                   <FontAwesomeIcon
                     icon={faEnvelopeSquare}
-                    className="text-white text-4xl transition-all duration-300 ease-in-out hover:text-gray-300"
+                    className="text-white text-5xl transition-all duration-300 ease-in-out hover:text-gray-300"
                   />
                 </a>
                 <a href="https://github.com/magicalsoup">
                   <FontAwesomeIcon
                     icon={faGithub}
-                    className="text-white text-4xl transition-all duration-300 ease-in-out hover:text-gray-300"
+                    className="text-white text-5xl transition-all duration-300 ease-in-out hover:text-gray-300"
                   />
                 </a>
                 <a href="https://www.linkedin.com/in/james-su-2093351a4/">
                   <FontAwesomeIcon
                     icon={faLinkedin}
-                    className="text-white text-4xl transition-all duration-300 ease-in-out hover:text-gray-300"
+                    className="text-white text-5xl transition-all duration-300 ease-in-out hover:text-gray-300"
                   />
                 </a>
                 <a href="https://www.instagram.com/magical_soup/">
                   <FontAwesomeIcon
                     icon={faInstagram}
-                    className="text-white text-4xl transition-all duration-300 ease-in-out hover:text-gray-300"
+                    className="text-white text-5xl transition-all duration-300 ease-in-out hover:text-gray-300"
                   />
                 </a>
               </div>

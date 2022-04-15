@@ -17,7 +17,7 @@ export default function() {
       <div className="flex flex-col w-full min-h-screen items-center space-y-16 pt-24">
         <div className="flex flex-col w-full items-center space-y-4">
           <p className="text-5xl font-bold" id="body-text">About Me.</p>
-          <p className="text-lg text-gray-600" id="body-text">Who am I and What do I Do?</p>
+          <p className="text-xl text-gray-600" id="body-text">Who am I and What do I Do?</p>
         </div>
         <div className="w-full md:w-2/3 px-8 py-32 space-y-8 bg-[#f5f9ff] rounded-3xl">
           <img src="..\images\profile_pic.png" className="max-w-xs lg:max-w-sm float-right p-4 rounded-full"/>

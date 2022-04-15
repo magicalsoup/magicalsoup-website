@@ -16,7 +16,7 @@ export default function () {
                 <div className="flex flex-col w-full min-h-screen items-center space-y-16 py-24">
                    <div className="flex flex-col w-full items-center text-center space-y-4">
                         <p className="text-5xl font-bold" id="body-text">Projects.</p>
-                        <p className="text-lg text-gray-600" id="body-text">Here are my finished and on-going projects.</p>
+                        <p className="text-xl text-gray-600" id="body-text">Here are my finished and on-going projects.</p>
                     </div>
                     <div className="flex flex-col w-full p-4 lg:px-20 space-y-8" id="body-text">
                         {ProjectData.map((item, index) => 

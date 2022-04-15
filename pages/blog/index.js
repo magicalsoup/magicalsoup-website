@@ -23,8 +23,8 @@ export default function Home({ allPostsData }) {
         <div className="flex flex-col w-full min-h-screen items-center space-y-16 py-24">
           <div className="flex flex-col w-full items-center space-y-4 text-center" id="body-text">
             <p className="text-5xl font-bold">Blog.</p>
-            <p className="text-lg text-gray-600">Learn about my computer science journey.</p>
-            <p className="text-lg text-gray-600">Also some life experiences 🤗.</p>
+            <p className="text-xl text-gray-600">Learn about my computer science journey.</p>
+            <p className="text-xl text-gray-600">Also some life experiences 🤗.</p>
           </div>
           <div className="flex flex-col w-full items-center p-8 space-y-16" id="body-text">
             {allPostsData.map(({id, date, title, imageSrc}) => (

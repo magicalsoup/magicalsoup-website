@@ -34,7 +34,7 @@ export default function Post({ postData }) {
           </div>
           <div className="flex justify-center min-h-screen w-full bg-[#f5f9ff]">
             <div className="flex flex-col w-full md:w-3/4 xl:w-2/3 bg-white -translate-y-48 z-10 p-12 rounded-xl">
-              <article className="prose-xl" id="body-text">
+              <article className="prose-sm sm:prose-xl" id="body-text">
                   <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
               </article>
               <a href="/blog"

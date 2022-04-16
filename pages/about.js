@@ -39,7 +39,7 @@ export default function() {
           </div>
         </div>
         <div className="flex flex-col w-full h-full py-24 items-center space-y-8 bg-[#f5f9ff] border-t-2">
-          <p className="text-3xl font-bold"id="body-text">Where you can find me.</p>
+          <p className="text-3xl font-bold text-center"id="body-text">Where you can find me.</p>
           <div className="flex flex-wrap w-full justify-center ">
             {PlatformData.map((item, index) => 
               <Card props={item} number={index}/>

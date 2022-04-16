@@ -15,7 +15,7 @@ export default function ProjectCard({props}) {
                     <div className="flex flex-col px-4">
                         <h2 className="text-3xl py-4">{props.title}</h2>
                         <span className="border-2 bg-black border-black w-full"></span>
-                        <div className={show? "text-xl" : "text-xl truncate"}>{props.description}</div>
+                        <div className={show? "sm:text-xl" : "sm:text-xl truncate"}>{props.description}</div>
                     </div>
                 </div>
                 <div className="p-4">

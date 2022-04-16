@@ -5,7 +5,7 @@ export default function NavBar() {
     const [navBar, toggleNavBar] = useState(false);
 
     return <>
-        <div className="fixed right-0 pr-10 z-50">
+        <div className="fixed right-0 pt-4 pr-4 sm:pr-10 sm:pt-10 z-50">
             <div id="hamburger" className={navBar? "open" : ""} onClick={() => {toggleNavBar(!navBar)}}>
               <span></span>
               <span></span>
@@ -14,7 +14,7 @@ export default function NavBar() {
             </div>
         </div>
         <div className={navBar? "fixed w-screen h-screen bg-black opacity-80 z-40": "h-0 hidden"}>
-          <div className="flex flex-col h-full justify-center items-center text-white text-6xl space-y-8 select-none" id="body-text">
+          <div className="flex flex-col h-full justify-center items-center text-white text-3xl sm:text-6xl space-y-8 select-none" id="body-text">
             <Link href="/" >
                 <a className="font-bold transition-all duration-200 ease-in-out hover:text-pink-500" onClick={() => {toggleNavBar(!navBar)}}>Home.</a>
             </Link>
@@ -38,7 +38,6 @@ export default function NavBar() {
             width: 60px;
             height: 45px;
             position: relative;
-            margin: 50px auto;
             -webkit-transform: rotate(0deg);
             -moz-transform: rotate(0deg);
             -o-transform: rotate(0deg);

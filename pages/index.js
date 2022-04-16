@@ -90,7 +90,7 @@ export default function Home() {
             50% { border-color: white;}
             100% {border-color: transparent;}
           }
-          @media (min-width: 640px) { 
+          @media (min-width: 768px) { 
             @keyframes typing {
               from { width: 0 }
               to { width: 34rem }

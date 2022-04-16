@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 export default function Card({props, number}) {
     // 0-indexing
     const getTextColor = () => {

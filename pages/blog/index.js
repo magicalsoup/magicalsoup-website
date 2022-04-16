@@ -30,12 +30,12 @@ export default function Home({ allPostsData }) {
             {allPostsData.map(({id, date, title, imageSrc}) => (
               <div className="flex flex-col w-full md:w-3/4 xl:w-2/3 items-start">
                   <a className="flex w-full justify-center" href={`/blog/${id}`}>
-                    <img src={imageSrc} className="object-fill w-full h-full aspect-video rounded-xl border-2"/>
+                    <img src={imageSrc} className="object-fill w-full h-full aspect-video rounded-xl shadow-md"/>
                   </a>
-                  <div className="text-gray-500">
+                  <div className="text-gray-500 pt-2">
                     {formatDate(date)}
                   </div>
-                  <a className="text-xl sm:text-3xl transition-all duration-300 ease-in-out hover:text-teal-500" href={`/blog/${id}`}>
+                  <a className="text-xl sm:text-3xl transition-all duration-300 ease-in-out hover:text-blue-500" href={`/blog/${id}`}>
                     {title}
                   </a>
               </div>

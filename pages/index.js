@@ -93,13 +93,7 @@ export default function Home() {
           @media (min-width: 768px) { 
             @keyframes typing {
               from { width: 0 }
-              to { width: 34rem }
-            }
-          }
-          @media (min-width: 1536px) { 
-            @keyframes typing {
-              from { width: 0 }
-              to { width: 40rem }
+              to { width: 36rem }
             }
           }
         `}  

@@ -3,6 +3,8 @@ import Head from 'next/head';
 import NavBar from '../components/navbar';
 import Card from "../components/card";
 import PlatformData from "../data/platformData";
+import ToolsData from "../data/toolsData";
+import ToolCard from "../components/toolCard";
 import Footer from '../components/footer';
 
 export default function() {
@@ -38,9 +40,18 @@ export default function() {
             </a>
           </div>
         </div>
-        <div className="flex flex-col w-full h-full py-24 items-center space-y-8 bg-[#f5f9ff] border-t-2">
-          <p className="text-3xl font-bold text-center"id="body-text">Where you can find me.</p>
-          <div className="flex flex-wrap w-full justify-center ">
+        <div className="flex flex-col w-full h-full px-4 py-24 bg-[#f5f9ff] border-t-2">
+          <div className="sm:px-6 lg:px-24 space-y-4 py-16">
+            <p className="text-center sm:text-left text-3xl font-bold" id="body-text">Tools and Frameworks that I like to use.</p>
+            <p className="text-center sm:text-left text-md lg:text-xl w-full lg:w-4/5" id="body-text">Below are a few links to tools and frameworks that I've stumbled upon in my journey and have been helpful over the years.</p>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 w-full gap-8">
+              {ToolsData.map((item) =>
+                <ToolCard props={item}></ToolCard>
+              )}
+            </div>
+          </div>
+          <p className="text-3xl font-bold text-center" id="body-text">Where you can find me.</p>
+          <div className="flex flex-wrap w-full justify-center">
             {PlatformData.map((item, index) => 
               <Card props={item} number={index}/>
             )}

@@ -9,6 +9,7 @@ export default function Home() {
     <>
       <Head>
         <title>James Su</title>
+        <link rel="Soup Icon" href="../soup-icon.png"/>
       </Head>
       <NavBar></NavBar>
       <main>
@@ -32,7 +33,7 @@ export default function Home() {
                 <a href="https://github.com/magicalsoup">
                   <FontAwesomeIcon
                     icon={faGithub}
-                    className="text-white text-3xl sm:text-3xl sm:text-5xl transition-all duration-300 ease-in-out hover:text-gray-300"
+                    className="text-white text-3xl sm:text-5xl transition-all duration-300 ease-in-out hover:text-gray-300"
                   />
                 </a>
                 <a href="https://www.linkedin.com/in/james-su-2093351a4/">

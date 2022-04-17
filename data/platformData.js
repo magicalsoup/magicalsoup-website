@@ -15,7 +15,7 @@ const PlatformData = [
         imageSrc: "../images/platforms/dmoj_icon.png",
         title: "DMOJ",
         subTitle: "Competitive Programming",
-        link: "https://dmoj.ca/user",
+        link: "https://dmoj.ca/user/sushi",
     },
     {
         imageSrc: "../images/platforms/linkedin_icon.png",

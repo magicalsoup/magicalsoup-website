@@ -16,12 +16,13 @@ export default function Home() {
         <div id="container">
           <div className="flex flex-col h-screen justify-center">
             <div className="p-6 sm:p-12 sm:w-3/5 lg:w-3/5 xl:w-2/5 space-y-8">
-              <h1 className="typed-out text-3xl md:text-7xl block" id="body-text">
+              <h1 className="typed-out text-3xl md:text-7xl" id="body-text">
                 Hi, I'm <a className="font-bold underline decoration-pink-500">James</a>
               </h1>
               <p className="text-white text-md sm:text-xl" id="body-text">
                 You might know me as magicalsoup. I like to dabble in different fields of computer science, 
-                like creating websites or competitive programming.
+                like creating websites or competitive programming. Staff and moderator
+                <a className="font-bold" href="https://dmoj.ca/" target="_blank"> @DMOJ.</a> 
               </p>
               <div className="space-x-8 pl-2">
                 <a href="mailto:amagicalsoup@gmail.com">
@@ -59,7 +60,7 @@ export default function Home() {
             //background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); 
             //animation: gradient-animation 10s ease infinite;
             background: linear-gradient(230deg, rgb(75, 207, 147), rgb(75, 121, 207), rgb(162, 75, 207)) 0% 0% / 300% 300%;
-            animation: 60s ease 0s infinite normal none running gradient-animation;
+            animation: 45s ease 0s infinite normal none running gradient-animation;
             background-size: 400% 400%;
           }
           @keyframes gradient-animation {

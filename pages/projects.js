@@ -10,6 +10,7 @@ export default function () {
         <>
             <Head>
             <title>James' Projects</title>
+            <link rel="Soup Icon" href="../soup-icon.png"/>
             </Head>
             <NavBar></NavBar>
             <main>

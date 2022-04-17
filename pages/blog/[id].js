@@ -24,6 +24,7 @@ export default function Post({ postData }) {
     <>
      <Head>
         <title>{postData.id}</title>
+        <link rel="Soup Icon" href="../soup-icon.png"/>
       </Head>
       <NavBar></NavBar>
       <main>

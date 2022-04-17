@@ -7,6 +7,7 @@ export default function Home() {
     <>
       <Head>
         <title>Contact</title>
+        <link rel="Soup Icon" href="../soup-icon.png"/>
       </Head>
       <NavBar></NavBar>
       <main>

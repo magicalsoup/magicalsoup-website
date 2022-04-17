@@ -12,10 +12,10 @@ export default function() {
     <>
     <Head>
         <title>About James</title>
+        <link rel="Soup Icon" href="../soup-icon.png"/>
     </Head>
     <NavBar></NavBar>
     <main>
-      {/* TODO make padding responsive*/}
       <div className="flex flex-col w-full min-h-screen items-center space-y-16 pt-24">
         <div className="flex flex-col w-full items-center space-y-4">
           <p className="text-5xl font-bold" id="body-text">About Me.</p>

@@ -17,6 +17,7 @@ export default function Home({ allPostsData }) {
       <>
       <Head>
         <title>James' Blog</title>
+        <link rel="Soup Icon" href="../soup-icon.png"/>
       </Head>
       <NavBar></NavBar>
       <main>

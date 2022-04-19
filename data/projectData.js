@@ -47,11 +47,11 @@ const  ProjectData = [
         description: "We wanted to bring back some reality for young teenagers to help them become more responsible and improve their financial literacy. To do that, there is a big number to keep track of a user's bubble tea spending to date, as well as graphs to help users visualize those numbers.",
         linksData: [
             {
-                link: "https://devpost.com/software/bubble-tea-tracker",
+                link: "https://github.com/OwenTheEpicGamer/bbt_trackerv2",
                 linkTitle: "View Code"
             },
             {
-                link: "https://devpost.com/software/nyan-cats-only-go-up",
+                link: "https://devpost.com/software/bubble-tea-tracker",
                 linkTitle: "View Project"
             },
             {

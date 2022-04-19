@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Contact</title>
+        <title>Contact James</title>
         <link rel="Soup Icon" href="../soup-icon.png"/>
       </Head>
       <NavBar></NavBar>

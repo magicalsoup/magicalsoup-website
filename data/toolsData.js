@@ -11,14 +11,14 @@ const ToolsData = [
         title: "Django",
         link: "https://www.djangoproject.com/",
         experience: "~1 year",
-        description: "I learned django while working for my voting feature PR to DMOJ, Canada's largest online judge. I've still much to learn. Django's rapid development and ease of backend/frontend implementation has definitely surpised me.",
+        description: "I learned django while working for my voting feature PR to DMOJ, Canada's largest online judge. I've still much to learn. Django's rapid development and ease of backend/frontend implementation has definitely surprised me.",
     },
     {
         imageSrc: "../images/tools/nextjs-logo.png",
         title: "NextJS",
         link: "https://nextjs.org/",
         experience: "~1 year",
-        description: "Ever thought of creating a personal website? I would recommend nextJS, it's very fast to develop a static site that does not require a dyanmic backend.",
+        description: "Ever thought of creating a personal website? I would recommend nextJS, it's very fast in terms of developing a static site that does not require a dyanmic backend.",
     },
     {
         imageSrc: "../images/tools/tailwindcss-logo.png",

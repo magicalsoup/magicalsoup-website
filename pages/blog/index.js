@@ -19,7 +19,7 @@ export default function Home({ allPostsData }) {
         <title>James' Blog</title>
         <link rel="Soup Icon" href="../soup-icon.png"/>
       </Head>
-      <NavBar></NavBar>
+      <NavBar currentPage={4}></NavBar>
       <main>
         <div className="flex flex-col w-full min-h-screen items-center space-y-16 py-24 px-4">
           <div className="flex flex-col w-full items-center space-y-4 text-center" id="body-text">

@@ -9,7 +9,7 @@ export default function Home() {
         <title>Contact James</title>
         <link rel="Soup Icon" href="../soup-icon.png"/>
       </Head>
-      <NavBar></NavBar>
+      <NavBar currentPage={5}></NavBar>
       <main>
         <div className="flex flex-col w-full min-h-screen items-center space-y-16 py-24">
             <div className="flex flex-col w-full items-center space-y-4">

@@ -11,7 +11,7 @@ export default function Home() {
         <title>James Su</title>
         <link rel="Soup Icon" href="../soup-icon.png"/>
       </Head>
-      <NavBar></NavBar>
+      <NavBar currentPage={1}></NavBar>
       <main>
         <div id="container">
           <div className="flex flex-col h-screen justify-center">

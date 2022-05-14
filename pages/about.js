@@ -14,7 +14,7 @@ export default function() {
         <title>About James</title>
         <link rel="Soup Icon" href="../soup-icon.png"/>
     </Head>
-    <NavBar></NavBar>
+    <NavBar currentPage={2}></NavBar>
     <main>
       <div className="flex flex-col w-full min-h-screen items-center space-y-16 pt-24">
         <div className="flex flex-col w-full items-center space-y-4">

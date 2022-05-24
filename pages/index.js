@@ -22,7 +22,8 @@ export default function Home() {
               <p className="text-white text-md sm:text-xl" id="body-text">
                 You might know me as magicalsoup. I like to dabble in different fields of computer science, 
                 like creating websites or competitive programming. Staff and moderator
-                <a className="font-bold" href="https://dmoj.ca/" target="_blank"> @DMOJ.</a> 
+                <a className="font-bold" href="https://dmoj.ca/" target="_blank"> @DMOJ.</a> Incoming computer science student 
+                <a className="font-bold" href="https://uwaterloo.ca/" target="_blank"> @UWaterloo.</a>
               </p>
               <div className="space-x-8 pl-2">
                 <a href="mailto:amagicalsoup@gmail.com">

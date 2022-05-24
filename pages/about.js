@@ -29,8 +29,7 @@ export default function() {
             of the computing field, such as servers, linux systems, and security. Join me on my journey!
           </p>
           <p className="text-xl" id="body-text">
-            Currently I'm finishing my highschool education at Bayview Secondary School and the <a className="font-bold">International Baccalaureate</a> program. 
-            But feel free to contact me for any interesting ideas!
+            Currently I'm finishing my highschool education at Bayview Secondary School and the <a className="font-bold">International Baccalaureate</a> program. Incoming <a className="font-bold">computer science</a> student at <a className="font-bold">University of Waterloo.</a>  But feel free to contact me for any interesting ideas!
           </p>
           <div className="p-2">
             <a 

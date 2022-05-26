@@ -6,7 +6,7 @@ export default function Footer() {
                 Developed with 💦 + 😭 in Richmond Hill.
             </div>
             <div className="text-gray-500 text-center" id="body-text">
-                Inspired by Waldo Broodryk, Anish Agnihotri, Eric Liu, Ava Pun.
+                Inspired by Waldo Broodryk, Anish Agnihotri.
             </div>
             <div className="text-gray-500 text-center" id="body-text">
                 Copyright © 2022 | James Su

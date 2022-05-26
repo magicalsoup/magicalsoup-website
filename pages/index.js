@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub, faInstagram} from "@fortawesome/free-brands-svg-icons"
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons"
 export default function Home() {
+    // need to use useEffect because "c" is defined on client side
     useEffect(() => {
         // source: By Boujjou Achraf*
         var c = document.getElementById("c");
@@ -29,19 +30,17 @@ export default function Home() {
             drops[x] = 1; 
 
         //drawing the characters
-        function draw()
-        {
+        function draw() {
             //Black BG for the canvas
             //translucent BG to show trail
             ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
             ctx.fillRect(0, 0, c.width, c.height);
 
-            ctx.fillStyle = "#f4427d";//green text
+            ctx.fillStyle = "#f4427d"; //green text
             ctx.font = font_size + "px arial";
             //looping over drops
-            for(var i = 0; i < drops.length; i++)
-            {
-                //a random chinese character to print
+            for(var i = 0; i < drops.length; i++) {
+                //a random character to print
                 var text = matrix[Math.floor(Math.random()*matrix.length)];
                 //x = i*font_size, y = value of drops[i]*font_size
                 ctx.fillText(text, i*font_size, drops[i]*font_size);

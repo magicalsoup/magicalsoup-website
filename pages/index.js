@@ -74,8 +74,7 @@ export default function Home() {
                         </h1>
                         <p className="text-white text-md sm:text-xl" id="body-text">
                             You might know me as magicalsoup. I like to dabble in different fields of computer science, 
-                            like creating websites or competitive programming. Staff and moderator
-                            <a className="font-bold hover:text-gray-300" href="https://dmoj.ca/" target="_blank"> @DMOJ.</a> Incoming computer science student 
+                            like creating websites or competitive programming. Computer science student 
                             <a className="font-bold hover:text-gray-300" href="https://uwaterloo.ca/" target="_blank"> @UWaterloo.</a>
                         </p>
                         <div className="space-x-8 pl-2">

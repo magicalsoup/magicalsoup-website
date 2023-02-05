@@ -32,7 +32,7 @@ export default function() {
           <div className="p-2">
             <a 
               className="text-3xl py-2 px-8 rounded-lg bg-emerald-200 hover:bg-emerald-400 hover:text-white transition-all duration-300 ease-in-out" 
-              id="body-text" href="./resume/James Su Resume.pdf" target="_blank">
+              id="body-text" href="google.com/" target="_blank">
               Resume
             </a>
           </div>

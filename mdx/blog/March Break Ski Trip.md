@@ -16,7 +16,7 @@ Here's a close up photo of us!
 
 The resort we went to was **Mt.St Louis & Moonstone**. I've been to this resort so many times, because I used to have a season pass back in grade 8.
 
-Still, having friends there made it worth it. Tried a few new tricks at the terrain park, still too scared to do the rails tho!
+Going with friends there made it worth it. Tried a few new tricks at the terrain park, still too scared to do the rails though!
 
 We had poutine for dinner and tis was a very tiring trip. 
 
